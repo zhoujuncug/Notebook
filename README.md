@@ -8,23 +8,23 @@
 
 ## CUDA
 1. 显卡驱动
-   1.1 sudo add-apt-repository ppa:graphics-drivers/ppa
-   1.2 sudo apt-get update
-   1.3 ubuntu-drivers devices
-       这里记录一下recommend 的driver 型号，我的是nvidia-driver-430
-   1.4 sudo apt install nvidia-driver-440
-   1.5 重启
-   1.6 $ nvidia-smi
-       有信息显示就OK
+   1.1 sudo add-apt-repository ppa:graphics-drivers/ppa  
+   1.2 sudo apt-get update  
+   1.3 ubuntu-drivers devices  
+       这里记录一下recommend 的driver 型号，我的是nvidia-driver-430  
+   1.4 sudo apt install nvidia-driver-440  
+   1.5 重启  
+   1.6 $ nvidia-smi  
+       有信息显示就OK  
 2. cuda
-   2.1 https://developer.nvidia.com/cuda-toolkit-archive
-       Operating: System Linux
-       Architecture: x86_64
-       Distribution: Ubuntu
-       Version: 18.04
-       Installer Type: deb(local)
-       然后官网会提示下载的命令
-       安装完成后 在安装目录/usr/local/cuda-10.1/samples/1_Utilities/deviceQuery 中打开 terminal
-       sudo make
-       sudo ./deviceQuery
-       如果有 Result = PASS 就OK 不成功就重启一下试试
+   2.1 https://developer.nvidia.com/cuda-toolkit-archive  
+       Operating: System Linux  
+       Architecture: x86_64  
+       Distribution: Ubuntu  
+       Version: 18.04  
+       Installer Type: deb(local)  
+       然后官网会提示下载的命令  
+       安装完成后 在安装目录/usr/local/cuda-10.1/samples/1_Utilities/deviceQuery 中打开 terminal  
+       sudo make  
+       sudo ./deviceQuery  
+       如果有 Result = PASS 就OK 不成功就重启一下试试  
