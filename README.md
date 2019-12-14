@@ -83,6 +83,6 @@
    copy如下内容保存
    ```
    [global]
-   index-url = https://mirrors.aliyun.com/pypi/simple
+   index-url = https://pypi.mirrors.ustc.edu.cn/simple/
    ```
    
