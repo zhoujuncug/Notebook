@@ -38,7 +38,7 @@
 
 
 ## CUDA
-1. 显卡驱动
+1. 显卡驱动  
    1.1 ```sudo add-apt-repository ppa:graphics-drivers/ppa```  
    1.2 ```sudo apt-get update```  
    1.3 ```ubuntu-drivers devices```  
@@ -47,7 +47,7 @@
    1.5 重启  
    1.6 ```nvidia-smi  
        有信息显示就OK  
-2. cuda
+2. cuda  
    2.1 https://developer.nvidia.com/cuda-toolkit-archive  
        Operating: System Linux  
        Architecture: x86_64  
@@ -59,7 +59,7 @@
        ```sudo make  
        ```sudo ./deviceQuery  
        如果有 Result = PASS 就OK 不成功就重启一下试试  
-3. cuDNN
+3. cuDNN  
    3.1 https://developer.nvidia.com/cudnn  
        需要账号，我自己是用QQ登录就行了  
        Download cuDNN  
@@ -67,7 +67,7 @@
        Download cuDNN v7.6.1 (June 24, 2019), for CUDA 10.1  
        cuDNN Library for Linux  
    3.2 解压  
-   3.3 执行下面的代码
+   3.3 执行下面的代码  
        ```sudo cp cuda/include/cudnn.h /usr/local/cuda/include  
        ```sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64  
        ```sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*  
