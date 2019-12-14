@@ -28,3 +28,15 @@
        sudo make  
        sudo ./deviceQuery  
        如果有 Result = PASS 就OK 不成功就重启一下试试  
+3. cuDNN
+   3.1 https://developer.nvidia.com/cudnn  
+       需要账号，我自己是用QQ登录就行了  
+       Download cuDNN  
+       I Agree To the Terms of the cuDNN Software License Agreement  
+       Download cuDNN v7.6.1 (June 24, 2019), for CUDA 10.1  
+       cuDNN Library for Linux  
+   3.2 解压
+   3.3 do cp cuda/include/cudnn.h /usr/local/cuda/include  
+       sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64  
+       sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*  
+
