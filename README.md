@@ -67,7 +67,8 @@
        Download cuDNN v7.6.1 (June 24, 2019), for CUDA 10.1  
        cuDNN Library for Linux  
    3.2 解压
-   3.3 ```sudo cp cuda/include/cudnn.h /usr/local/cuda/include  
+   3.3 执行下面的代码
+       ```sudo cp cuda/include/cudnn.h /usr/local/cuda/include  
        ```sudo cp cuda/lib64/libcudnn* /usr/local/cuda/lib64  
        ```sudo chmod a+r /usr/local/cuda/include/cudnn.h /usr/local/cuda/lib64/libcudnn*  
 
