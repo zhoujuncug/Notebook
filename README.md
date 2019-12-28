@@ -87,3 +87,9 @@
    index-url = https://pypi.mirrors.ustc.edu.cn/simple/
    ```
    
+## 火狐浏览器
+   1. 链接不安全
+      搜索框输入 ```about:config```
+      选 我了解此风险
+      输入 ```security.enterprise_roots.enabled```
+      切换为 TRUE
