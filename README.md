@@ -4,7 +4,8 @@
 ## 逆卷积计算公式
   o = (i-1)*s - k + 2p + 2
   https://zhuanlan.zhihu.com/p/57348649
-#
+## COCO2017
+  https://blog.csdn.net/gzj2013/article/details/82385164
 # 重装系统记录
 # 一定！一定！一定！记得要备份，如果实在想不到要备份什么，起码要把文档备份了！血的教训 2019 12 16
 ## 系统
