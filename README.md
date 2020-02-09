@@ -24,9 +24,19 @@
      # Alternatively, if you do not have permissions or prefer
      # not to install the COCO API into global site-packages
      python3 setup.py install --user
+   3. coco api
+     
+     from pycocotools.coco import COCO
+     coco = COCO('coco_annotation_file')
+     coco.getCatIds() # 返回annotation文件中类型的索引，比如：人，猫，滑板
+     coco.loadCats([1]) # 返回索引1中类型包含的信息
+     coco.getImgIds() # 返回图像的索引
+     coco.loadImgs(391895) # 返回索引为391895的图像的信息
+     coco.getAnnIds(391895) # 返回索引为391895的图像的标注索引 可能有多个标注索引
+     coco.loadAnns((coco.getAnnIds(391895))[0]) # 返回索引为391895的图像的标注索引[0]的标注信息
 
 # 重装系统记录
-# 一定！一定！一定！记得要备份，如果实在想不到要备份什么，起码要把文档备份了！血的教训 2019 12 16
+# 一定！一定！一定！记得要备份，如果实在想不到要备份什么，起码要把文档备份了！
 ## 系统
 1. 安装双系统时，应该先安装win，然后ubuntu
 2. 安装win后，如果想把ubuntu安装到E盘（比如）那么删除E盘，其他盘要激活
