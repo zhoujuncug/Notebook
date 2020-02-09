@@ -6,6 +6,25 @@
   https://zhuanlan.zhihu.com/p/57348649
 ## COCO2017
   https://blog.csdn.net/gzj2013/article/details/82385164
+  安装COCO API
+  1. 安装git
+     ```
+     sudo add-apt-repository ppa:git-core/ppa       //添加源
+     sudo apt-get update                                          //更新
+     sudo apt-get install git                //自动安装git
+     git --version                                                       //确认git版本
+     ```
+   2. 安装coco api
+ 
+     # COCOAPI=/path/to/clone/cocoapi
+     git clone https://github.com/cocodataset/cocoapi.git $COCOAPI
+     cd $COCOAPI/PythonAPI
+     # Install into global site-packages
+     make install
+     # Alternatively, if you do not have permissions or prefer
+     # not to install the COCO API into global site-packages
+     python3 setup.py install --user
+
 # 重装系统记录
 # 一定！一定！一定！记得要备份，如果实在想不到要备份什么，起码要把文档备份了！血的教训 2019 12 16
 ## 系统
