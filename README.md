@@ -34,6 +34,23 @@
      coco.loadImgs(391895) # 返回索引为391895的图像的信息
      coco.getAnnIds(391895) # 返回索引为391895的图像的标注索引 可能有多个标注索引
      coco.loadAnns((coco.getAnnIds(391895))[0]) # 返回索引为391895的图像的标注索引[0]的标注信息
+     
+## opencv python
+1. 仿射变换
+   ```
+   import cv2
+   # src dst为3x2的np.array 为变换前后的 3个对应坐标
+   trans = cv2.getAffineTransform(np.float32(src),np.float32(dst)) # trans为2x3的矩阵
+   # 对于任一坐标可以通过下面代码得到变换后的位置
+   coor = np.array([coor[0], coor[1], 1]).T
+   new_coor = np.dot(trans, coor)
+   # 对于图像
+   input = cv2.warpAffine(
+            image,
+            trans,
+            (int(self.image_size[0]), int(self.image_size[1])), # 变换后的图像shape
+            flags=cv2.INTER_LINEAR
+        )
 
 # 重装系统记录
 # 一定！一定！一定！记得要备份，如果实在想不到要备份什么，起码要把文档备份了！
