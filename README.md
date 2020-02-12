@@ -4,6 +4,12 @@
 ## 逆卷积计算公式
   o = (i-1)*s - k + 2p + 2
   https://zhuanlan.zhihu.com/p/57348649
+## NumPy
+  没有省略的显示矩阵
+  ```
+  import numpy as np
+  np.set_printoptions(threshold=np.inf, linewidth=4000)
+  ```
 ## COCO2017
   https://blog.csdn.net/gzj2013/article/details/82385164
   安装COCO API
