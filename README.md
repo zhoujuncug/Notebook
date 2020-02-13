@@ -10,6 +10,16 @@
   import numpy as np
   np.set_printoptions(threshold=np.inf, linewidth=4000)
   ```
+## torch
+  转换通道
+  ```image.permute(0, 3, 1, 2)```
+## torchvision
+  把一个batch中的多个图像，拼接为一个超大的图像，便于显示
+  ```
+  # output.shape为(batch_size, channel, w, h)
+  cat_img = torchvision.utils.make_grid(output, nrow=8, padding=2)
+  # 注意，此时cat_img的shape(3， w*8, h*batch_size/8) 如果用opencv显示，需要转一下通道(w, h, 3)
+  ```
 ## COCO2017
   https://blog.csdn.net/gzj2013/article/details/82385164
   安装COCO API
