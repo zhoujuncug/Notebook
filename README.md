@@ -20,6 +20,14 @@
   cat_img = torchvision.utils.make_grid(output, nrow=8, padding=2)
   # 注意，此时cat_img的shape(3， w*8, h*batch_size/8) 如果用opencv显示，需要转一下通道(w, h, 3)
   ```
+  transporms.ToTensor()不仅仅是把图像转为tensor，而且还会归一化
+  一般经过
+  ```
+  normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
+  transforms.Compose([transforms.ToTensor(), normalize,]))
+  ```
+  图像会归一化后，然后3个通道分别减去mean，除std
+  因此要把数据还原，首先要乘std，加mean，还要逆向归一化
 ## COCO2017
   https://blog.csdn.net/gzj2013/article/details/82385164
   安装COCO API
