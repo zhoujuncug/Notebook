@@ -13,6 +13,15 @@
 ## torch
   转换通道
   ```image.permute(0, 3, 1, 2)```
+  mul方法
+  ```
+  a = torch.tensor(........)
+  a.mul(b)
+  ```
+  如果b为一个数，则a的所有元素乘b
+  如果b为一个size为（1， a.size(1))或者（a.size),则为a的每一行，对应乘b
+  如果b为一个size为（a.size(0), 1),则为a的每一列，对应乘b
+  对于tensor，不能像numpy那样用.shape,而是.size()
 ## torchvision
   把一个batch中的多个图像，拼接为一个超大的图像，便于显示
   ```
