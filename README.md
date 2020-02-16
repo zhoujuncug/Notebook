@@ -10,6 +10,10 @@
   import numpy as np
   np.set_printoptions(threshold=np.inf, linewidth=4000)
   ```
+  
+  矩阵乘法
+  a*b 是对应相乘，broadcast
+  而a.dot(b)才是熟悉的矩阵点乘
 ## torch
   转换通道
   ```image.permute(0, 3, 1, 2)```
