@@ -15,9 +15,9 @@
   2. 矩阵乘法
   a*b 是对应相乘即broadcast。而a.dot(b)才是熟悉的矩阵点乘
 ## torch
-  转换通道
+  1. 转换通道
   ```image.permute(0, 3, 1, 2)```
-  mul方法
+  2. mul方法
   ```
   a = torch.tensor(........)
   a.mul(b)
@@ -27,13 +27,13 @@
   如果b为一个size为（a.size(0), 1),则为a的每一列，对应乘b
   对于tensor，不能像numpy那样用.shape,而是.size()
 ## torchvision
-  把一个batch中的多个图像，拼接为一个超大的图像，便于显示
+  1. 把一个batch中的多个图像，拼接为一个超大的图像，便于显示
   ```
   # output.shape为(batch_size, channel, w, h)
   cat_img = torchvision.utils.make_grid(output, nrow=8, padding=2)
   # 注意，此时cat_img的shape(3， w*8, h*batch_size/8) 如果用opencv显示，需要转一下通道(w, h, 3)
   ```
-  transporms.ToTensor()不仅仅是把图像转为tensor，而且还会归一化
+  2. transporms.ToTensor()不仅仅是把图像转为tensor，而且还会归一化
   一般经过
   ```
   normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
