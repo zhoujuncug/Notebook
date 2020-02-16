@@ -16,7 +16,7 @@
   a*b 是对应相乘即broadcast。  
   而a.dot(b)才是熟悉的矩阵点乘
 ## torch
-  1. 转换通道
+  1. 转换通道  
   ```image.permute(0, 3, 1, 2)```
   2. mul方法
   ```
