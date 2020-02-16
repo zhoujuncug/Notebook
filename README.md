@@ -2,18 +2,18 @@
 # 
 # 深度学习中琐碎的知识
 ## 逆卷积计算公式
+  1. 卷积后图像大小
   o = (i-1)*s - k + 2p + 2
   https://zhuanlan.zhihu.com/p/57348649
 ## NumPy
-  没有省略的显示矩阵
+  1. 没有省略的显示矩阵
   ```
   import numpy as np
   np.set_printoptions(threshold=np.inf, linewidth=4000)
   ```
   
-  矩阵乘法
-  a*b 是对应相乘，broadcast
-  而a.dot(b)才是熟悉的矩阵点乘
+  2. 矩阵乘法
+  a*b 是对应相乘即broadcast。而a.dot(b)才是熟悉的矩阵点乘
 ## torch
   转换通道
   ```image.permute(0, 3, 1, 2)```
