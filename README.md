@@ -134,7 +134,8 @@
    1.2 ```sudo apt-get update```  
    1.3 ```ubuntu-drivers devices```  
        这里记录一下recommend 的driver 型号，我的是nvidia-driver-430  
-   1.4 ```sudo apt install nvidia-driver-440  
+   1.4 ```sudo apt install nvidia-driver-440   
+       default option if need.
    1.5 重启  
    1.6 ```nvidia-smi  
        有信息显示就OK  
