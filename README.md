@@ -130,6 +130,12 @@
 
 ## CUDA
 1. 显卡驱动  
+   ## new method
+   1.1 open Software & Update
+   1.2 Additional Drivers
+   1.3 choose one driver for Nvidia gpu
+   
+   ## The following method is probably out-of-date
    1.1 ```sudo add-apt-repository ppa:graphics-drivers/ppa```  
    1.2 ```sudo apt-get update```  
    1.3 ```ubuntu-drivers devices```  
