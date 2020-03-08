@@ -28,7 +28,8 @@
   如果b为一个size为（a.size(0), 1),则为a的每一列，对应乘b
   对于tensor，不能像numpy那样用.shape,而是.size()  
   3. pretrained model download urls  
-  https://blog.csdn.net/lxy_2011/article/details/97488494
+  https://blog.csdn.net/lxy_2011/article/details/97488494  
+  https://pytorch.org/docs/stable/torchvision/models.html  
 ## torchvision
   1. 把一个batch中的多个图像，拼接为一个超大的图像，便于显示
   ```
