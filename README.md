@@ -27,6 +27,8 @@
   如果b为一个size为（1， a.size(1))或者（a.size),则为a的每一行，对应乘b
   如果b为一个size为（a.size(0), 1),则为a的每一列，对应乘b
   对于tensor，不能像numpy那样用.shape,而是.size()
+  3. pretrained model download urls  
+  https://blog.csdn.net/lxy_2011/article/details/97488494
 ## torchvision
   1. 把一个batch中的多个图像，拼接为一个超大的图像，便于显示
   ```
@@ -140,8 +142,8 @@
    1.2 ```sudo apt-get update```  
    1.3 ```ubuntu-drivers devices```  
        这里记录一下recommend 的driver 型号，我的是nvidia-driver-430  
-   1.4 ```sudo apt install nvidia-driver-440   
-       default option if need.
+   1.4 ```sudo apt install nvidia-driver-440  
+       default option if need.  
    1.5 重启  
    1.6 ```nvidia-smi  
        有信息显示就OK  
