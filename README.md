@@ -1,6 +1,7 @@
 # Notebook
 # 
 # python  
+  1. 搜索路径  
   ```sys.path```  
   返回当前搜索路径list，如果有ModuleNotFoundError可以看看路径是否在这个list中  
   可以通过  
@@ -10,6 +11,8 @@
   可以返回当前文件的路径  
   ```os.path.split(path)```  
   可以对路径拆分最后一个目录 或者 文件  
+  2. 对文件名、路径操作  
+  https://www.cnblogs.com/sigai/p/8074329.html  
 # 深度学习中琐碎的知识
 ## 逆卷积计算公式
   1. 卷积后图像大小  
