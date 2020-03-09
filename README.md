@@ -30,6 +30,13 @@
   3. pretrained model download urls  
   https://blog.csdn.net/lxy_2011/article/details/97488494  
   https://pytorch.org/docs/stable/torchvision/models.html  
+  4. pretrained model and init_weights  
+  ```checkpoint = torch.load('pretrained_model.pth')```  
+  可以读取预训练模型参数，checkpoint为一个OrderedDict，OrderedDict.items()返回keys与values，OrderedDict.keys()返回key。  
+  对于一个model，可以用model.named_parameters()和model.parameters()返回模型的参数。  
+  对于某个parameter可以通过  
+  ```param.data = X```  
+  对某个parameter赋值  
 ## torchvision
   1. 把一个batch中的多个图像，拼接为一个超大的图像，便于显示
   ```
