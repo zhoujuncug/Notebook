@@ -53,6 +53,7 @@
   ```
   import models.pose_resnet
   ```
+  models就是package文件夹，pose_resnet就是pose_resnet.py文件  
 # 深度学习中琐碎的知识
 ## 逆卷积计算公式
   1. 卷积后图像大小  
