@@ -48,6 +48,11 @@
   全称 pretty printer，可以让各种数据结构更美观地输出  
   ```pprint.pprint(dict())```美化后打印  
   ```pprint.pformat(dict())```返回美化后的字符串  
+  7. python package  
+  python package是一个文件夹，该文件夹下面有__init__.py，还有其他.py文件。如果要调用python package下的.py文件，应该在__init__.py文件中加入  
+  ```
+  import models.pose_resnet
+  ```
 # 深度学习中琐碎的知识
 ## 逆卷积计算公式
   1. 卷积后图像大小  
