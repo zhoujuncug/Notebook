@@ -43,6 +43,10 @@
   logger.addHandler(console) # 加到logger上
   logger.info('massage')
   ```
+  6. pprint  
+  全称 pretty printer，可以让各种数据结构更美观地输出  
+  ```pprint.pprint(dict())```美化后打印  
+  ```pprint.pformat(dict())```返回美化后的字符串  
 # 深度学习中琐碎的知识
 ## 逆卷积计算公式
   1. 卷积后图像大小  
