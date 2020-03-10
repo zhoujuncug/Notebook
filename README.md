@@ -85,6 +85,22 @@
   对于某个parameter可以通过  
   ```param.data = X```  
   对某个parameter赋值  
+  5. torch.backends.cudnn
+  ```
+  import torch.backends.cudnn as cudnn
+  cudnn.benchmark = True
+  ```
+  这行代码可以在网络结构和输入不变的情况下会减少训练时间
+  https://blog.csdn.net/byron123456sfsfsfa/article/details/96003317
+  ```
+  torch.backends.cudnn.deterministic = True
+  ```
+  让cuda实现reproducibility,当然要是同一个pytorch版本、同一个硬件平台，而且torch、numpy都使用伪随机数的条件下
+  https://pytorch.org/docs/stable/notes/randomness.html
+  ```
+  torch.backends.cudnn.enabled = False
+  ```
+  禁用cudnn
 ## torchvision
   1. 把一个batch中的多个图像，拼接为一个超大的图像，便于显示
   ```
