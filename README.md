@@ -13,6 +13,35 @@
   可以对路径拆分最后一个目录 或者 文件  
   2. 对文件名、路径操作  
   https://www.cnblogs.com/sigai/p/8074329.html  
+  ```
+  from pathlib import Path
+  path = Path('path')
+  path.exists()
+  path.mkdir(parents=True, exist_ok=True)
+  Path / '路径' # 任然是Path
+  os.path.basename(path) # 返回路径最后一个文件（夹）
+  path.split('.') # 剥离文件名与格式
+  ```
+  3. 格式化字符串  
+  ```
+  str = 'hello {place}'.format(place='wuhan')
+  str = '%-10s' % （'china') # 左对齐 长度为10
+  ```
+  4. 时间
+  ```
+  import time
+  time_str = time.strftime('%Y-%m-%d-%H-%M')
+  ```
+  5. 输出日志logging
+  ```
+  import logging
+  head = '%(asctime)-15s %(message)s' # 输出格式  时间-信息
+  logging.basicConfig(filename=path, format=head) # 定义输出日志路径 和 日志格式
+  logger = logging.getLogger() # 相当于实例化
+  logger.setLevel(logging.INFO) # 日志信息有多个等级 只有大于等于INFO的等级才会输出
+  console = logging.StreamHandler() # 创建在终端输出的handler
+  logger.addHandler(console) # 加到logger上
+  ```
 # 深度学习中琐碎的知识
 ## 逆卷积计算公式
   1. 卷积后图像大小  
