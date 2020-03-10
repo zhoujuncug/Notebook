@@ -41,6 +41,7 @@
   logger.setLevel(logging.INFO) # 日志信息有多个等级 只有大于等于INFO的等级才会输出
   console = logging.StreamHandler() # 创建在终端输出的handler
   logger.addHandler(console) # 加到logger上
+  logger.info('massage')
   ```
 # 深度学习中琐碎的知识
 ## 逆卷积计算公式
