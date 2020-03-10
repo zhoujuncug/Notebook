@@ -33,6 +33,7 @@
   time_str = time.strftime('%Y-%m-%d-%H-%M')
   ```
   5. 输出日志logging
+  https://www.cnblogs.com/goodhacker/p/3355660.html
   ```
   import logging
   head = '%(asctime)-15s %(message)s' # 输出格式  时间-信息
