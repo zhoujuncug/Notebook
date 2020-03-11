@@ -122,6 +122,18 @@
   ```
   图像会归一化后，然后3个通道分别减去mean，除std
   因此要把数据还原，首先要乘std，加mean，还要逆向归一化
+## tensorboardX  
+  https://blog.csdn.net/bigbennyguo/article/details/87956434  
+  TensorboardX 这个工具使得 TensorFlow 外的其他神经网络框架也可以使用到 Tensorboard 的便捷功能.  
+  首先要安装tensorboardX 和 tensorflow，在网页可视化需要tensorflow.  
+  ```
+  from tensorboardX import SummaryWriter
+  writer = SummaryWriter('logdir') #首先创建一个writer
+  writer.add_scalar('data_name', data, global_step=epoch) # 这是添加数字的方法，分别是数字的名字，数字(float)，epoch
+  writer.add_graph(model, (dump_input, ), verbose=False) # 这是添加模型的方法，dump_input，是一个torch.tensor(batch_size,channel,width,height)
+  # 还有add_image,记录图像等等
+  writer.close() # 这个要添加一下，否者可视化的时候可能有问题
+  ```
 ## COCO2017
   https://blog.csdn.net/gzj2013/article/details/82385164
   安装COCO API
