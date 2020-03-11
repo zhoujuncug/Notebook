@@ -101,12 +101,25 @@
   ```
   torch.backends.cudnn.deterministic = True
   ```
-  让cuda实现reproducibility,当然要是同一个pytorch版本、同一个硬件平台，而且torch、numpy都使用伪随机数的条件下
+  让cuda实现reproducibility,当然要是同一个pytorch版本、同一个硬件平台，而且torch、numpy都使用伪随机数的条件下  
   https://pytorch.org/docs/stable/notes/randomness.html
   ```
   torch.backends.cudnn.enabled = False
   ```
-  禁用cudnn
+  禁用cudnn  
+  6. 多GPU并行  
+  ```model = torch.nn.DataParallel(model, device_ids=gpus)```
+  gpus为一个list,[0, 1, 2, 3] 分别为gpu代号
+  7. loss计算
+  把损失计算封装到nn.Module的子类中，就像是写model，也有forward。如下：
+  ```criterion = JointsMSELoss().cuda()```
+  其好处，我猜测是可以用gpu加速
+  
+  8. nn.MseLoss()
+  ```
+  mse = nn.MSELoss()
+  loss = mse(a, b) # a b 可以为相同的任意维度，如果报错a,b转为.float()
+  ```
 ## torchvision
   1. 把一个batch中的多个图像，拼接为一个超大的图像，便于显示
   ```
