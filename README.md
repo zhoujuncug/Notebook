@@ -270,3 +270,5 @@
       选 我了解此风险
       输入 ```security.enterprise_roots.enabled```
       切换为 TRUE
+## TIM  
+   https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu
