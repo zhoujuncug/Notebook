@@ -197,7 +197,11 @@
  ## imgaug  
 https://imgaug.readthedocs.io/en/latest/index.html  
 https://blog.csdn.net/limiyudianzi/article/details/86497345  
-mgaug is a library for image augmentation in machine learning experiments.
+mgaug is a library for image augmentation in machine learning experiments.  
+bbox  
+https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B02%20-%20Augment%20Bounding%20Boxes.ipynb  
+keypoints  
+https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B01%20-%20Augment%20Keypoints.ipynb  
 
 # 重装系统记录
 # 一定！一定！一定！记得要备份，如果实在想不到要备份什么，起码要把文档备份了！
