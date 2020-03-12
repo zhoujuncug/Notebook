@@ -194,6 +194,9 @@
             (int(self.image_size[0]), int(self.image_size[1])), # 变换后的图像shape
             flags=cv2.INTER_LINEAR
         )
+ ## imgaug  
+https://imgaug.readthedocs.io/en/latest/index.html
+mgaug is a library for image augmentation in machine learning experiments.
 
 # 重装系统记录
 # 一定！一定！一定！记得要备份，如果实在想不到要备份什么，起码要把文档备份了！
