@@ -195,7 +195,8 @@
             flags=cv2.INTER_LINEAR
         )
  ## imgaug  
-https://imgaug.readthedocs.io/en/latest/index.html
+https://imgaug.readthedocs.io/en/latest/index.html  
+https://blog.csdn.net/limiyudianzi/article/details/86497345  
 mgaug is a library for image augmentation in machine learning experiments.
 
 # 重装系统记录
