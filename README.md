@@ -173,7 +173,7 @@
      coco = COCO('coco_annotation_file')
      coco.getCatIds() # 返回annotation文件中类型的索引，比如：人，猫，滑板
      coco.loadCats([1]) # 返回索引1中类型包含的信息
-     coco.getImgIds() # 返回图像的索引
+     coco.getImgIds(catIds=*) # 返回*类型图像的索引
      coco.loadImgs(391895) # 返回索引为391895的图像的信息
      coco.getAnnIds(391895) # 返回索引为391895的图像的标注索引 可能有多个标注索引
      coco.loadAnns((coco.getAnnIds(391895))[0]) # 返回索引为391895的图像的标注索引[0]的标注信息
