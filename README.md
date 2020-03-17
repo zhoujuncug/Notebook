@@ -77,7 +77,20 @@
   a[0], a[1] = a[1], a[0] # 这是错的
   a[[0, 1], :] = a[[1, 0], :] #这才是正确的
   ```
-
+  4. argmax, amax  
+  ```
+  a = np.argmax(b, 2) # b.shape = 2, 17, n  返回shape=2, 17 在第2个维度上找最大值的索引
+  a = np.amax(a, 2)# b.shape = 2, 17, n  返回shape=2, 17 在第2个维度上找最大值
+  ```
+  5. tile
+  ```
+  a = np.tile(b, (1, 1, 2)) # b.shape 2, 17, n 返回shape=2, 17,2n b在第2个维度上copy一次
+  ```
+  6. greater获取mask
+  ```
+  a = np.greater(b, 0) # 返回b大于0的mask
+  a = a.astype(np.float32) # 把mask转为数
+  ```
 ## torch
   1. 转换通道  
   ```image.permute(0, 3, 1, 2)```
