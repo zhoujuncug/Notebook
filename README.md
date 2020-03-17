@@ -86,9 +86,12 @@
   ```
   a = np.tile(b, (1, 1, 2)) # b.shape 2, 17, n 返回shape=2, 17,2n b在第2个维度上copy一次
   ```
-  6. greater获取mask
+  6. mask
   ```
   a = np.greater(b, 0) # 返回b大于0的mask
+  a = np.less(b, 0)
+  a = np.equal(b, 0) # 等于0的mask
+  a = np.not_equal(b, 0) 
   a = a.astype(np.float32) # 把mask转为数
   ```
 ## torch
