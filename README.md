@@ -94,6 +94,10 @@
   a = np.not_equal(b, 0) 
   a = a.astype(np.float32) # 把mask转为数
   ```
+  7. 反转
+  ```
+  b = np.flip(a, 3) # 把a沿着第三维度反转
+  ```
 ## torch
   1. 转换通道  
   ```image.permute(0, 3, 1, 2)```
