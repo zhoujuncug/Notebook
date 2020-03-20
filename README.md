@@ -103,6 +103,16 @@
   ```
   b = a.copy()
   ```
+  8. cv2图像与tensor 图像 
+  np.ndarray的[h, w, c] rgb格式  Tensor的[c, h, w]  
+  ```
+  image_chw = np.transpose(image_hwc, (2,0,1)) 相互转换
+  ```
+  cv2显示图像，如果np.array是np.float32的  像素范围是（0， 1），如果是uint8则（0， 255）
+  ```
+  image_uint = image_float.astype(np.uint8)
+  image_float = image_uint8.astype(np.float32)
+  ```
 ## torch
   1. 转换通道  
   ```image.permute(0, 3, 1, 2)```
