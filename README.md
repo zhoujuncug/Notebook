@@ -168,6 +168,9 @@
   9. 自定义层  
   自定义层的权重应该在 ```self.__init__()```下面定义而且必须是nn.Parameter() 比如  
   ```self.weight = torch.nn.Parameter(torch.Tensor([[2.0, 0.0], [0.0, 1.0]], requires_grad=True))```  
+  10. 优化器
+  优化器的第一个输入是一个列表，该列表下面是tensor。  
+  所以要对一个参数a 优化，则应该输入```[a]```  
 ## torchvision
   1. 把一个batch中的多个图像，拼接为一个超大的图像，便于显示
   ```
