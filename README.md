@@ -316,6 +316,9 @@ https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B01%2
        Distribution: Ubuntu  
        Version: 18.04  
        Installer Type: deb(local)  
+       10-1, you must select this version  
+       https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=deblocal  
+       some pkg has been downloaded in my passport 
        然后官网会提示下载的命令  
        安装完成后 在安装目录/usr/local/cuda-10.1/samples/1_Utilities/deviceQuery 中打开 terminal  
        ```sudo make  
@@ -326,10 +329,7 @@ https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B01%2
        需要账号，我自己是用QQ登录就行了  
        Download cuDNN  
        I Agree To the Terms of the cuDNN Software License Agreement  
-       Download cuDNN v7.6.1 (June 24, 2019), for CUDA 10.1  
-       10.1, you must select this version  
-       https://developer.nvidia.com/cuda-10.1-download-archive-base?target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1804&target_type=deblocal
-       some pkg has been downloaded in my passport  
+       Download cuDNN v7.6.1 (June 24, 2019), for CUDA 10.1   
        cuDNN Library for Linux  
    3.2 解压  
    3.3 执行下面的代码  
