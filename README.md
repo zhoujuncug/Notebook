@@ -43,6 +43,11 @@
   console = logging.StreamHandler() # 创建在终端输出的handler
   logger.addHandler(console) # 加到logger上
   logger.info('massage')
+  ```  
+  在其他模块中用
+  ```
+  import logging
+  logger = logging.getLogger(__name__)
   ```
   6. pprint  
   全称 pretty printer，可以让各种数据结构更美观地输出  
