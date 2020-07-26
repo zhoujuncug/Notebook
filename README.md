@@ -203,6 +203,9 @@
   # 还有add_image,记录图像等等
   writer.close() # 这个要添加一下，否者可视化的时候可能有问题
   ```
+ ## Pretrained Model  
+ https://blog.csdn.net/weixin_36047799/article/details/103564627  
+ 
 ## COCO2017
   https://blog.csdn.net/gzj2013/article/details/82385164
   安装COCO API
