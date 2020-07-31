@@ -6,6 +6,8 @@
   返回当前搜索路径list，如果有ModuleNotFoundError可以看看路径是否在这个list中  
   可以通过  
   ```sys.path.insert(0, path)```  
+  或者  
+  '''sys.path.append(os.path.joint(os.path.dirname(__file__), '..'))'''  
   添加搜索路径  
   ```os.path.dirname(__file__)```  
   可以返回当前文件的路径  
