@@ -1,7 +1,7 @@
 def calculateAP(data_):
     '''
     This function is used for calculate AP0.5.
-    :param data_: [[gt_bbox, dt_bbox, dt_score], ] # gt, dt are numpy array
+    :param data_: [[gt_bbox, dt_bbox, dt_score], ] # gt_bbox.shape=[:, 4], dt_box.shape=[:, 4],dt_score.shape=[:] numpy array
     :return: print AP0.5 and save pr_array.npy for PR curve.
     '''
     import torch
