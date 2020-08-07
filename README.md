@@ -121,6 +121,32 @@
   image_uint = image_float.astype(np.uint8)
   image_float = image_uint8.astype(np.float32)
   ```
+## Visdom  
+  1. launch visdom  
+  ```python -m visdom.server```  
+  2. Open http://localhost:8097 in your browser  
+  3. Dynamic curve  
+  ```
+  from visdom import Visdom
+import numpy as np
+import time
+
+
+viz = Visdom(env='loss')
+x, y = 0, 0
+win = viz.line(X=np.array([x]), Y=np.array([y]))
+
+for i in np.linspace(0, 10 * np.pi, 1000):
+    x = i
+    y = np.sin(x)
+
+    viz.line(X=np.array([x]), Y=np.array([y]), win=win, update='append')
+    time.sleep(0.00001)
+   ```
+   4. More examples  
+   https://blog.csdn.net/cpongo3/article/details/93624339?utm_source=app  
+   https://www.pytorchtutorial.com/pytorch-visdom/  
+   
 ## torch
   1. 转换通道  
   ```image.permute(0, 3, 1, 2)```
