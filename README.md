@@ -122,6 +122,8 @@
   image_float = image_uint8.astype(np.float32)
   ```
 ## Visdom  
+  0. download scripts  
+  https://github.com/casuallyName/document-sharing/tree/master/static  
   1. launch visdom  
   ```python -m visdom.server```  
   2. Open http://localhost:8097 in your browser  
