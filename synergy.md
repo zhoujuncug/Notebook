@@ -18,4 +18,6 @@ https://blog.csdn.net/pblearning/article/details/101278721
 2. add /usr/bin/synergyc -f --name <client-name> <server ip>  
 
 ## 4. Automatic login
-Settings --> Details --> Users --> Unlock (on the up-right) --> Automatic Login (On).  
+In Ubuntu, settings --> Details --> Users --> Unlock (on the up-right) --> Automatic Login (On).  
+ 
+In win10, create a shortcut of synergy, then drag the shortcut into the dir(win+R --> shell:startup).
