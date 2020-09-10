@@ -8,7 +8,7 @@ Refer to https://github.com/anibali/docker-pytorch
 ## Create a Container
 Refer to https://zhuanlan.zhihu.com/p/52827335  
 Refer to https://github.com/anibali/docker-pytorch  
-Note that: -it terminal, --gpus=0(all), -p port mapping, -v space mapping, --ipc=host multiprocessing. 
+Note that: -it terminal, --gpus=0(all), -p port mapping, -v space mapping, --ipc=host multiprocessing.   
 Recommend at least 3 ports, 8097 for visdom, 22 for ssh.
 ## SSH
 Refer to https://blog.csdn.net/qq_27068845/article/details/77015432  
@@ -39,7 +39,7 @@ In ssh clinet,
 ssh root@127.0.0.1 - 8022
 ```
 ## PyCharm connects the remote server by ssh
-In PyCharm, Tools --> Development --> configuration --> + --> SFTP --> setup Connection and Mappings;
+In PyCharm, Tools --> Development --> configuration --> + --> SFTP --> setup Connection and Mappings;  
 SSH Interperter: File --> Setting --> Project:Project --> Python Interperter --> Python Interperter --> add --> SSH Interperter.
 
 ## "Python" referring
