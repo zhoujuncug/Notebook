@@ -53,7 +53,11 @@ which python
 sudo rm /usr/bin/python
 sudo ln -s {python interperter path} /usr/bin/python
 PATH=/usr/bin:$PATH
-```  
+```
 ## SSH under win10
 Refer to https://www.jianshu.com/p/5af4ed62a752  
 Right click "windows bottom" --> Windows PowerShell --> root@172.0.0.1 -p 8022
+
+## CONDA for root
+
+Refer to http://www.siyuanblog.com/?p=31126
