@@ -2,6 +2,7 @@
 # 
 # python  
   1. 搜索路径  
+
     ```sys.path```  
     返回当前搜索路径list，如果有ModuleNotFoundError可以看看路径是否在这个list中  
     可以通过  
@@ -14,6 +15,7 @@
     ```os.path.split(path)```  
     可以对路径拆分最后一个目录 或者 文件  
   2. 对文件名、路径操作  
+
     https://www.cnblogs.com/sigai/p/8074329.html  
   ```
   from pathlib import Path
@@ -35,6 +37,7 @@
   time_str = time.strftime('%Y-%m-%d-%H-%M')
   ```
   5. 输出日志logging
+
     https://www.cnblogs.com/goodhacker/p/3355660.html
   ```
   import logging
@@ -52,10 +55,12 @@
   logger = logging.getLogger(__name__)
   ```
   6. pprint  
+
     全称 pretty printer，可以让各种数据结构更美观地输出  
     ```pprint.pprint(dict())```美化后打印  
     ```pprint.pformat(dict())```返回美化后的字符串  
   7. python package  
+
     python package是一个文件夹，该文件夹下面有__init__.py，还有其他.py文件。如果要调用python package下的.py文件，应该在__init__.py文件中加入  
   ```
   import models.pose_resnet
@@ -65,6 +70,7 @@
 # 深度学习中琐碎的知识
 ## 逆卷积计算公式
   1. 卷积后图像大小  
+
     o = (i-1)*s - k + 2p + 2  
     https://zhuanlan.zhihu.com/p/57348649
 ## NumPy
@@ -75,6 +81,7 @@
   ```
 
   2. 矩阵乘法  
+
     a*b 是对应相乘即broadcast。  
     而a.dot(b)才是熟悉的矩阵点乘
   3. 交换某行（列)
@@ -112,6 +119,7 @@
   b = a.copy()
   ```
   8. cv2图像与tensor 图像 
+
     np.ndarray的[h, w, c] rgb格式  Tensor的[c, h, w]  
   ```
   image_chw = np.transpose(image_hwc, (2,0,1)) 相互转换
@@ -123,8 +131,10 @@
   ```
 ## Visdom  
   0. download scripts  
+
     https://github.com/casuallyName/document-sharing/tree/master/static  
   1. launch visdom  
+
     ```python -m visdom.server```  
   2. Open http://localhost:8097 in your browser  
   3. Dynamic curve  
@@ -151,6 +161,7 @@ for i in np.linspace(0, 10 * np.pi, 1000):
 
 ## torch
   1. 转换通道  
+
     ```image.permute(0, 3, 1, 2)```
   2. mul方法
   ```
@@ -162,9 +173,11 @@ for i in np.linspace(0, 10 * np.pi, 1000):
   如果b为一个size为（a.size(0), 1),则为a的每一列，对应乘b
   对于tensor，不能像numpy那样用.shape,而是.size()  
   3. pretrained model download urls  
+
     https://blog.csdn.net/lxy_2011/article/details/97488494  
     https://pytorch.org/docs/stable/torchvision/models.html  
   4. pretrained model and init_weights  
+
     ```checkpoint = torch.load('pretrained_model.pth')```  
     可以读取预训练模型参数，checkpoint为一个OrderedDict，OrderedDict.items()返回keys与values，OrderedDict.keys()返回key。  
     对于一个model，可以用model.named_parameters()和model.parameters()返回模型的参数。  
@@ -188,25 +201,38 @@ for i in np.linspace(0, 10 * np.pi, 1000):
   ```
   禁用cudnn  
   6. 多GPU并行  
+
     ```model = torch.nn.DataParallel(model, device_ids=gpus)```
     gpus为一个list,[0, 1, 2, 3] 分别为gpu代号
   7. loss计算
+
     把损失计算封装到nn.Module的子类中，就像是写model，也有forward。如下：
     ```criterion = JointsMSELoss().cuda()```
     其好处，我猜测是可以用gpu加速
-  
+
   8. nn.MseLoss()
   ```
   mse = nn.MSELoss()
   loss = mse(a, b) # a b 可以为相同的任意维度，如果报错a,b转为.float()
   ```
   9. 自定义层  
+
     自定义层的权重应该在 ```self.__init__()```下面定义而且必须是nn.Parameter() 比如  
     ```self.weight = torch.nn.Parameter(torch.Tensor([[2.0, 0.0], [0.0, 1.0]], requires_grad=True))```  
   10. 优化器
+
     优化器的第一个输入是一个列表，该列表下面是tensor。  
     所以要对一个参数a 优化，则应该输入```[a]```  
+11. hook
+
+hook主要是用于显示变量的梯度或可视化网络的输入输出。可以在跑网络前用hook显示网络结构。
+
+https://zhuanlan.zhihu.com/p/75054200
+
+
+
 ## torchvision
+
   1. 把一个batch中的多个图像，拼接为一个超大的图像，便于显示
   ```
   # output.shape为(batch_size, channel, w, h)
@@ -214,6 +240,7 @@ for i in np.linspace(0, 10 * np.pi, 1000):
   # 注意，此时cat_img的shape(3， w*8, h*batch_size/8) 如果用opencv显示，需要转一下通道(w, h, 3)
   ```
   2. transporms.ToTensor()不仅仅是把图像转为tensor，而且还会归一化
+
     一般经过
   ```
   normalize = transforms.Normalize(mean=[0.485, 0.456, 0.406], std=[0.229, 0.224, 0.225])
