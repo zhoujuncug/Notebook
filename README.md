@@ -436,4 +436,6 @@ https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B01%2
 ## TIM  
    https://gitee.com/wszqkzqk/deepin-wine-for-ubuntu
 
-# test
+
+## Ubuntu Wireless network card
+https://github.com/aircrack-ng/rtl8812au/tree/v5.3.4
