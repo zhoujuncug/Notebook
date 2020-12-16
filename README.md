@@ -320,6 +320,17 @@ https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B02%2
 keypoints  
 https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B01%20-%20Augment%20Keypoints.ipynb  
 
+ ## Tensorflow-gpu 
+ Version of tensorflow must be corresponded to version of cuda  
+ https://tensorflow.google.cn/install/source#linux  
+ ```
+ # if cuda == 11.0
+ pip install tensorflow==2.4
+ ```
+ bug: Could not load dynamic library 'libcudnn.so.8'  
+ https://blog.csdn.net/qq_46244851/article/details/110731411  
+ 
+
 # 重装系统记录
 # 一定！一定！一定！记得要备份，如果实在想不到要备份什么，起码要把文档备份了！
 ## 系统
