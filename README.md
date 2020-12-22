@@ -386,6 +386,12 @@ https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B01%2
    1.5 重启  
    1.6 ```nvidia-smi  
        有信息显示就OK  
+   ### troubleshoot  
+       No additional driver available.  
+       ```  
+          sudo add-apt-repository ppa:graphics-drivers/ppa  
+          sudo apt-get update  
+       ```
    
 2. cuda  
    2.1 https://developer.nvidia.com/cuda-toolkit-archive  
