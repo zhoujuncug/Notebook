@@ -456,8 +456,10 @@ https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B01%2
 ## 向日葵  
   1. 连接后，显示已断开  
      需要安装并使用lightdm  
-     ``` sudo apt-get install lightdm 
-         duso dpkg-reconfigure lightdm```
+     ``` 
+     sudo apt-get install lightdm  
+     duso dpkg-reconfigure lightdm
+     ```
          
 ## Ubuntu Wireless network card
 https://github.com/aircrack-ng/rtl8812au/tree/v5.3.4
