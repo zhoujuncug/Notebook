@@ -460,6 +460,10 @@ https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B01%2
      sudo apt-get install lightdm  
      duso dpkg-reconfigure lightdm
      ```
+     
+## VS Code + docker container
+  https://blog.csdn.net/weixin_42548893/article/details/112452997?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242  
+  
          
 ## Ubuntu Wireless network card
 https://github.com/aircrack-ng/rtl8812au/tree/v5.3.4
