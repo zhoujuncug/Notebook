@@ -129,6 +129,9 @@
   image_uint = image_float.astype(np.uint8)
   image_float = image_uint8.astype(np.float32)
   ```
+  9. boardcast  
+  参考：https://blog.csdn.net/qq_33228413/article/details/106204625?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242  
+  
 ## Visdom  
   0. download scripts  
 
