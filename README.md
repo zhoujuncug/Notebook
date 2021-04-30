@@ -131,6 +131,8 @@
   ```
   9. boardcast  
   参考：https://blog.csdn.net/qq_33228413/article/details/106204625?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242  
+  10. reshape
+  参考 https://zhuanlan.zhihu.com/p/72381219
   
 ## Visdom  
   0. download scripts  
