@@ -466,6 +466,13 @@ https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B01%2
      duso dpkg-reconfigure lightdm
      ```
      
+## Git
+1. [本地上传到远端](https://blog.csdn.net/qq_38408785/article/details/89322266)  
+
+## Docker proxy
+``` export http_proxy=http://yourproxyaddress:proxyport ```  
+``` export https_proxy=http://yourproxyaddress:proxyport ```  
+
 ## VS Code + docker container
   https://blog.csdn.net/weixin_42548893/article/details/112452997?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242  
   
