@@ -467,7 +467,8 @@ https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B01%2
      ```
      
 ## Git
-1. [本地上传到远端](https://blog.csdn.net/qq_38408785/article/details/89322266)  
+1. [本地上传到远端, 远端不存在时](https://blog.csdn.net/qq_38408785/article/details/89322266)  
+2. [本地上传到远端，远端已经存在时](http://www.fwxstar.com/code/16_77)  
 
 ## Docker proxy
 ``` export http_proxy=http://yourproxyaddress:proxyport ```  
