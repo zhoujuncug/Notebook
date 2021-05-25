@@ -476,7 +476,8 @@ https://nbviewer.jupyter.org/github/aleju/imgaug-doc/blob/master/notebooks/B01%2
 ``` export https_proxy=http://yourproxyaddress:proxyport ```  
 
 ## VS Code + docker container
-  https://blog.csdn.net/weixin_42548893/article/details/112452997?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242  
+  [教程](https://blog.csdn.net/weixin_42548893/article/details/112452997?utm_medium=distribute.pc_relevant.none-task-blog-baidujs_title-0&spm=1001.2101.3001.4242)  
+  1. [pylance ReportMissingImport](https://blog.csdn.net/qq_44486439/article/details/107177385)  
   
          
 ## Ubuntu Wireless network card
