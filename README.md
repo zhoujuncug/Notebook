@@ -78,6 +78,7 @@
      arithmetic_precedence_indication=True
      ...
   ```
+  也可以直接下载[配置文件](https://github.com/zhoujuncug/Notebook/blob/master/style)  
   
 # 深度学习中琐碎的知识
 ## 逆卷积计算公式
