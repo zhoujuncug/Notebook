@@ -67,6 +67,18 @@
   ```
   models就是package文件夹，pose_resnet就是pose_resnet.py文件  
   8. 字典的key可以是hashable（不可变）的数据类型，所以可以用tuple作为key  
+  9. 代码格式
+  安装yapf
+  在~/.config/yapf/下
+  ```yapf --style-help > yapf_style.cfg
+     mv yapf_style.cfg style
+     vim style
+     
+     # 修改配置文件
+     arithmetic_precedence_indication=True
+     ...
+  ```
+  
 # 深度学习中琐碎的知识
 ## 逆卷积计算公式
   1. 卷积后图像大小  
