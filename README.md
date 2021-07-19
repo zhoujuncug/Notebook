@@ -297,6 +297,7 @@ https://zhuanlan.zhihu.com/p/75054200
      git clone https://github.com/cocodataset/cocoapi.git $COCOAPI
      cd $COCOAPI/PythonAPI
      # Install into global site-packages
+     pip install Cython
      make install
      # Alternatively, if you do not have permissions or prefer
      # not to install the COCO API into global site-packages
